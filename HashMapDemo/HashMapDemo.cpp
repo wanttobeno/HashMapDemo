@@ -79,6 +79,8 @@ int main(int agrc,char* agrv)
 		}
 		nCount ++;
 	}
+	fclose(pFile);
+	pFile = NULL;
 
 	printf("\n///////////// \n");
 	printf("\n共读取有效数据%d行  HashMap大小%d\n",nCount,hashMap.size());
